@@ -1,33 +1,27 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 import { IconButton } from 'react-native-paper';
 import { useAppNavigation } from '../navigation/utils/useAppNavigation';
 
 const ScreenHeader = () => {
-
   const navigation = useAppNavigation();
-
-  const onHandleFilter = () => {
-    navigation.navigate("GamesFilterScreen")
-    console.log("basıldı")
-  }
 
   return (
     <View style={styles.main}>
-      <View style={styles.placeholder}/>
+      <View style={styles.placeholder} />
       <Text style={styles.headerTxt}>Free Games</Text>
       <View style={styles.filterBtnContainer}>
         <IconButton
           icon="filter-outline"
-          size={25  }
-          onPress={onHandleFilter}
+          size={25}
+          onPress={() => navigation.navigate("GamesFilterScreen")} 
         />
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default ScreenHeader
+export default ScreenHeader;
 
 const styles = StyleSheet.create({
   main: {
@@ -43,15 +37,13 @@ const styles = StyleSheet.create({
     flex: 0.3,
   },
   placeholder: {
-    flex:0.3
+    flex: 0.3,
   },
   headerTxt: {
     fontSize: 20,
     fontWeight: '500',
     padding: 10,
     textAlign: 'center',
-    flex:1
-    
+    flex: 1,
   },
-
-})
+});

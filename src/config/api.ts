@@ -1,1 +1,1 @@
-export const API_URL = 'https://www.freetogame.com/api/games';
+export const API_URL = 'https://www.freetogame.com/api/';

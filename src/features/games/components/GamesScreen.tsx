@@ -3,10 +3,18 @@ import React from 'react'
 import getGames from '../api/getGames'
 import GameCard from './GameCard'
 import { ScrollView } from 'react-native-gesture-handler';
+import { useAppSelector } from '../../../hooks/hooks';
+import { RootState } from '../../../redux/store/store';
 
 
-function GamesScreen(){
-    const result = getGames() || [];
+function GamesScreen() {
+
+    const selectedPlatform = useAppSelector((state: RootState) => state.selectPlatform.platform);
+    const selectedCategory = useAppSelector((state: RootState) => state.selectCategory.category);
+    const selectedSortBy = useAppSelector((state: RootState) => state.selectSortBy.sortBy);
+
+    console.log(selectedPlatform, selectedCategory, selectedSortBy)
+    const result = getGames(selectedPlatform, selectedCategory, selectedSortBy) || [];
 
     return (
         <SafeAreaView>
