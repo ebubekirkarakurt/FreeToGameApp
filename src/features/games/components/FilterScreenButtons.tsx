@@ -11,13 +11,13 @@ const FilterScreenButtons = () => {
 
   return (
     <View style={styles.main}>
-      <View style={styles.clearBtnContainer}>
+      <View style={styles.btnContainer}>
         <Pressable style={styles.clearBtn} onPress={onHandleClick}>
           <AntDesign name="close" size={20} color="#BC0148" />
           <Text style={[styles.btnText, { color: '#BC0148' }]}>Clear</Text>
         </Pressable>
       </View>
-      <View style={styles.filterBtnContainer}>
+      <View style={styles.btnContainer}>
         <Pressable style={styles.filterBtn} onPress={onHandleClick}>
           <EvilIcons name="search" size={24} color="white" />
           <Text style={[styles.btnText, { color: 'white' }]}>Filter</Text>
@@ -34,10 +34,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-around',
   },
-  clearBtnContainer: {
-    flex: 0.4,
-  },
-  filterBtnContainer: {
+  btnContainer: {
     flex: 0.4,
   },
   clearBtn: {

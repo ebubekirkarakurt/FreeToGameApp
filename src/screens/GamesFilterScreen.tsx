@@ -66,10 +66,7 @@ export default GamesFilterScreen;
 const styles = StyleSheet.create({
   main: {
     backgroundColor: '#ebd5e5',
-    height: '90%',
-    marginTop: 80,
+    height: '100%',
     justifyContent: 'center',
-    borderTopRightRadius: 40,
-    borderTopLeftRadius: 40,
   },
 });

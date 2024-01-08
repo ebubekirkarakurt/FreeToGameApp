@@ -12,7 +12,7 @@ type IGameCardProps = {
 
 function GameCard({ title, thumbnail, genre, platform }: IGameCardProps) {
   return (
-    <Surface style={styles.gameCard} elevation={3}>
+    <Surface style={styles.gameCard} elevation={1}>
       <Image style={styles.img} source={{ uri: thumbnail }} />
       <Text style={styles.gameTitle}>{title}</Text>
       <View>
