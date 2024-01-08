@@ -8,12 +8,12 @@ import { store } from './src/redux/store/store';
 
 export default function App() {
   return (
-      <GestureHandlerRootView style={{ flex: 1 }}>
-        <Provider store={store}>
-            <NavigationContainer>
-              <RootNavigator />
-            </NavigationContainer>
-        </Provider>
-      </GestureHandlerRootView>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Provider store={store}>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
+      </Provider>
+    </GestureHandlerRootView>
   );
 }

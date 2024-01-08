@@ -14,7 +14,7 @@ const ScreenHeader = () => {
         <IconButton
           icon="filter-outline"
           size={25}
-          onPress={() => navigation.navigate("GamesFilterScreen")} 
+          onPress={() => navigation.navigate('GamesFilterScreen')}
         />
       </View>
     </View>

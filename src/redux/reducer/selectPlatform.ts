@@ -1,23 +1,23 @@
-import { PayloadAction, createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit';
 
-type PlatformType={
-    platform : string
-}
+type PlatformType = {
+  platform: string;
+};
 
 const initialState: PlatformType = {
-    platform: 'all'
-}
+  platform: 'all',
+};
 
 export const selectPlatform = createSlice({
-    name: 'selectPlatform',
-    initialState,
-    reducers: {
-        setPlatform: (state, actions: PayloadAction<string>) => {
-            state.platform = actions.payload
-        }
-    }
-})
+  name: 'selectPlatform',
+  initialState,
+  reducers: {
+    setPlatform: (state, actions: PayloadAction<string>) => {
+      state.platform = actions.payload;
+    },
+  },
+});
 
-export const { setPlatform } = selectPlatform.actions
+export const { setPlatform } = selectPlatform.actions;
 
-export default selectPlatform.reducer
+export default selectPlatform.reducer;

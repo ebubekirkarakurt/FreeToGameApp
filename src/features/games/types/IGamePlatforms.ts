@@ -1,1 +1,1 @@
-export type IGamePlatforms = 'all' | 'browser' | 'pc'
+export type IGamePlatforms = 'all' | 'browser' | 'pc';
