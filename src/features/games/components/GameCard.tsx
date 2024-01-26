@@ -1,7 +1,8 @@
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { Surface } from 'react-native-paper';
 import GameCardLabel from './GameCardLabel';
+import { useAppNavigation } from '../../../navigation/utils/useAppNavigation';
 
 type IGameCardProps = {
   title: string;
@@ -11,14 +12,17 @@ type IGameCardProps = {
 };
 
 function GameCard({ title, thumbnail, genre, platform }: IGameCardProps) {
+  const navigation = useAppNavigation();
   return (
-    <Surface style={styles.gameCard} elevation={1}>
+    <Pressable onPress={() => navigation.navigate("GameDetails")}>
+      <Surface style={styles.gameCard} elevation={1}>
       <Image style={styles.img} source={{ uri: thumbnail }} />
       <Text style={styles.gameTitle}>{title}</Text>
       <View>
         <GameCardLabel genre={genre} platform={platform} />
       </View>
     </Surface>
+    </Pressable>
   );
 }
 
