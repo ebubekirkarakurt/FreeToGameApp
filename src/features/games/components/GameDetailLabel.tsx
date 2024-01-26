@@ -3,14 +3,14 @@ import React from 'react';
 
 type Props = {};
 
-const GameDetails = (props: Props) => {
+const GameDetailLabel = (props: Props) => {
   return (
     <View>
-      <Text>GameDetails</Text>
+      <Text>GameDetailLabel</Text>
     </View>
   );
 };
 
-export default GameDetails;
+export default GameDetailLabel;
 
 const styles = StyleSheet.create({});

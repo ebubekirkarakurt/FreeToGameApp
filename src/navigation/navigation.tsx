@@ -14,7 +14,7 @@ export type RootStackParamsList = {
 
 const RootStack = createNativeStackNavigator<RootStackParamsList>();
 
-const screenOptions: NativeStackNavigationOptions = { headerShown:false };
+const screenOptions: NativeStackNavigationOptions = { headerShown: false };
 const gamesFilterScreenOptions: NativeStackNavigationOptions = {
   presentation: 'modal',
 };

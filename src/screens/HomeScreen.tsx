@@ -8,7 +8,6 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 type Props = {};
 
 const HomeScreen = (props: Props) => {
-  
   return (
     <GestureHandlerRootView>
       <View>

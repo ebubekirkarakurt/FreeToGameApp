@@ -18,28 +18,27 @@ function GamesScreen() {
     (state: RootState) => state.selectSortBy.sortBy,
   );
 
-  const result = getGames(selectedPlatform, selectedCategory, selectedSortBy) || [];
+  const result =
+    getGames(selectedPlatform, selectedCategory, selectedSortBy) || [];
 
   return (
     <SafeAreaView>
       <ScrollView>
-        <Surface elevation={4} >
+        <Surface elevation={4}>
           <View>
-            { result &&
+            {result &&
               result.map((game: any) => {
-                  return (
-                      <View key={game.id}>
-                          <GameCard
-                              title={game.title}
-                              thumbnail={game.thumbnail}
-                              genre={game.genre}
-                              platform={game.platform}
-                          />
-                      </View>
-                  );
-                  
-              })
-            }
+                return (
+                  <View key={game.id}>
+                    <GameCard
+                      title={game.title}
+                      thumbnail={game.thumbnail}
+                      genre={game.genre}
+                      platform={game.platform}
+                    />
+                  </View>
+                );
+              })}
           </View>
         </Surface>
       </ScrollView>

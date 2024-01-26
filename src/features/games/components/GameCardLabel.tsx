@@ -25,18 +25,18 @@ const GameCardLabel = ({ genre, platform }: GameCardLabelProps) => {
 export default GameCardLabel;
 
 const styles = StyleSheet.create({
-    main: {
-        display: 'flex',
-        flexDirection: 'row',
-        width: '100%',
-        justifyContent: 'space-around',
-        margin: 5,
-    },
-    container: {
-        flexDirection: 'row',
-        alignItems: 'center',
-    },
-    txt: {
-        padding:5
-    }
+  main: {
+    display: 'flex',
+    flexDirection: 'row',
+    width: '100%',
+    justifyContent: 'space-around',
+    margin: 5,
+  },
+  container: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  txt: {
+    padding: 5,
+  },
 });

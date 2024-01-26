@@ -14,14 +14,14 @@ type IGameCardProps = {
 function GameCard({ title, thumbnail, genre, platform }: IGameCardProps) {
   const navigation = useAppNavigation();
   return (
-    <Pressable onPress={() => navigation.navigate("GameDetails")}>
+    <Pressable onPress={() => navigation.navigate('GameDetails')}>
       <Surface style={styles.gameCard} elevation={1}>
-      <Image style={styles.img} source={{ uri: thumbnail }} />
-      <Text style={styles.gameTitle}>{title}</Text>
-      <View>
-        <GameCardLabel genre={genre} platform={platform} />
-      </View>
-    </Surface>
+        <Image style={styles.img} source={{ uri: thumbnail }} />
+        <Text style={styles.gameTitle}>{title}</Text>
+        <View>
+          <GameCardLabel genre={genre} platform={platform} />
+        </View>
+      </Surface>
     </Pressable>
   );
 }
@@ -51,5 +51,5 @@ const styles = StyleSheet.create({
     margin: 5,
     fontSize: 20,
     fontWeight: '600',
-  }
+  },
 });
