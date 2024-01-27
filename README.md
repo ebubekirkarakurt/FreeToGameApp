@@ -2,7 +2,7 @@
 This project inspired by [this.](https://github.com/chsdwn/FreeToGameApp)
 
 ## Demo
-https://github.com/ebubekirkarakurt/FreeToGameApp/issues/1#issue-2103682274
+https://github.com/ebubekirkarakurt/FreeToGameApp/assets/114517935/bc0c37d1-3cb5-4ed6-9ee0-50c5fe4ceedc
 
 ## Installation
 
