@@ -5,15 +5,15 @@ import GamesScreen from '../features/games/components/GamesScreen';
 import CardSkeleton from '../features/games/components/CardSkeleton';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-type Props = {};
 
-const HomeScreen = (props: Props) => {
+const HomeScreen = () => {
   return (
     <GestureHandlerRootView>
       <View>
         <ScreenHeader />
-        <GamesScreen />
-        {/* <CardSkeleton/> */}
+        <GamesScreen /> 
+        {/* <CardSkeleton></CardSkeleton> */}
+
       </View>
     </GestureHandlerRootView>
   );

@@ -4,12 +4,14 @@ import {
 } from '@react-navigation/native-stack';
 import GamesFilterScreen from '../screens/GamesFilterScreen';
 import HomeScreen from '../screens/HomeScreen';
-import GameDetails from '../features/games/components/GameDetails';
+import GameDetailScreen from '../screens/GameDetailScreen';
 
 export type RootStackParamsList = {
   HomeScreen: undefined;
   GamesFilterScreen: undefined;
-  GameDetails: undefined;
+  GameDetails: {
+    item: any;
+  };
 };
 
 const RootStack = createNativeStackNavigator<RootStackParamsList>();
@@ -30,9 +32,10 @@ export const RootNavigator = () => {
       />
       <RootStack.Screen
         name="GameDetails"
-        component={GameDetails}
+        component={GameDetailScreen}
         options={{
           headerShown: true,
+          
         }}
       />
     </RootStack.Navigator>

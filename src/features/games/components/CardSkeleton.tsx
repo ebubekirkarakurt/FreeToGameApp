@@ -1,9 +1,8 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
 
-type Props = {};
 
-const CardSkeleton = (props: Props) => {
+const CardSkeleton = () => {
   return (
     <View>
       <SkeletonPlaceholder borderRadius={4}>

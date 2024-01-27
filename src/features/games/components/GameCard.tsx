@@ -5,16 +5,17 @@ import GameCardLabel from './GameCardLabel';
 import { useAppNavigation } from '../../../navigation/utils/useAppNavigation';
 
 type IGameCardProps = {
+  item: any;
   title: string;
   thumbnail: string;
   genre: string;
   platform: string;
 };
 
-function GameCard({ title, thumbnail, genre, platform }: IGameCardProps) {
+function GameCard({ item, title, thumbnail, genre, platform }: IGameCardProps) {
   const navigation = useAppNavigation();
   return (
-    <Pressable onPress={() => navigation.navigate('GameDetails')}>
+    <Pressable onPress={() => navigation.navigate('GameDetails', {item: item})}>
       <Surface style={styles.gameCard} elevation={1}>
         <Image style={styles.img} source={{ uri: thumbnail }} />
         <Text style={styles.gameTitle}>{title}</Text>

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import React from 'react';
 import FilterOptions from '../features/games/components/FilterOptions';
 import {
@@ -6,7 +6,7 @@ import {
   platformItems,
   sortByItems,
 } from '../features/games/config';
-import { useAppDispatch, useAppSelector } from '../hooks/hooks';
+import { useAppDispatch } from '../hooks/hooks';
 import { setPlatform } from '../redux/reducer/selectPlatform';
 import { setCategory } from '../redux/reducer/selectCategory';
 import { setSortBy } from '../redux/reducer/selectSortBy';

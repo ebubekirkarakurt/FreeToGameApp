@@ -24,13 +24,14 @@ function GamesScreen() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Surface elevation={4}>
+        <Surface elevation={4} style={{backgroundColor:'#f0e1ec'}}>
           <View>
             {result &&
               result.map((game: any) => {
                 return (
                   <View key={game.id}>
                     <GameCard
+                      item={game}
                       title={game.title}
                       thumbnail={game.thumbnail}
                       genre={game.genre}
