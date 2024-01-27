@@ -6,7 +6,7 @@ import { useAppNavigation } from '../../../navigation/utils/useAppNavigation';
 import CardSkeleton from './CardSkeleton';
 
 type IGameCardProps = {
-  isLoading: boolean,
+  isLoading: boolean;
   item: any;
   title: string;
   thumbnail: string;
@@ -14,30 +14,35 @@ type IGameCardProps = {
   platform: string;
 };
 
-function GameCard({ isLoading ,item, title, thumbnail, genre, platform }: IGameCardProps) {
+function GameCard({
+  isLoading,
+  item,
+  title,
+  thumbnail,
+  genre,
+  platform,
+}: IGameCardProps) {
   const navigation = useAppNavigation();
   return (
-     
-    <Pressable onPress={() => navigation.navigate('GameDetails', {item: item})}>
+    <Pressable
+      onPress={() => navigation.navigate('GameDetails', { item: item })}
+    >
       <Surface style={styles.gameCard} elevation={1}>
-        {
-          isLoading ? 
-          <View style={{width:'100%', height:'100%'}}>
-            <CardSkeleton/>
+        {isLoading ? (
+          <View style={{ width: '100%', height: '100%' }}>
+            <CardSkeleton />
           </View>
-          :
-          <View style={{width:'100%', height:'100%'}}>
+        ) : (
+          <View style={{ width: '100%', height: '100%' }}>
             <Image style={styles.img} source={{ uri: thumbnail }} />
             <Text style={styles.gameTitle}>{title}</Text>
             <View>
               <GameCardLabel genre={genre} platform={platform} />
             </View>
           </View>
-        }
+        )}
       </Surface>
     </Pressable>
-  
-    
   );
 }
 

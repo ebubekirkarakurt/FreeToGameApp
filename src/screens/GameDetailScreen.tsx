@@ -3,21 +3,18 @@ import React from 'react';
 import GameDetails from '../features/games/components/GameDetails';
 import { RouteProp } from '@react-navigation/native';
 
-type GameDetailRouteProp = RouteProp<
-  RootStackParamsList,
-  'GameDetails'
->;
+type GameDetailRouteProp = RouteProp<RootStackParamsList, 'GameDetails'>;
 
 type Props = {
   route: GameDetailRouteProp;
 };
 
-const GameDetailScreen = ({route}: Props) => {
+const GameDetailScreen = ({ route }: Props) => {
   const item = route.params.item;
 
   return (
     <View>
-      <GameDetails item={item}/>
+      <GameDetails item={item} />
     </View>
   );
 };

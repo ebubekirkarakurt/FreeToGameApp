@@ -4,7 +4,6 @@ import ScreenHeader from '../components/ScreenHeader';
 import GamesScreen from '../features/games/components/GamesScreen';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-
 const HomeScreen = () => {
   return (
     <GestureHandlerRootView>
@@ -17,4 +16,3 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
-

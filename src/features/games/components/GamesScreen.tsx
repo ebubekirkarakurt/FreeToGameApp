@@ -18,15 +18,19 @@ function GamesScreen() {
     (state: RootState) => state.selectSortBy.sortBy,
   );
 
-  const {result} =
+  const { result } =
     getGames(selectedPlatform, selectedCategory, selectedSortBy) || [];
 
-  const isLoading = getGames(selectedPlatform, selectedCategory, selectedSortBy);
+  const isLoading = getGames(
+    selectedPlatform,
+    selectedCategory,
+    selectedSortBy,
+  );
 
   return (
     <SafeAreaView>
       <ScrollView>
-        <Surface elevation={4} style={{backgroundColor:'#f0e1ec'}}>
+        <Surface elevation={4} style={{ backgroundColor: '#f0e1ec' }}>
           <View>
             {result &&
               result.map((game: any) => {
