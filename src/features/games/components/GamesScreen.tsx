@@ -18,8 +18,10 @@ function GamesScreen() {
     (state: RootState) => state.selectSortBy.sortBy,
   );
 
-  const result =
+  const {result} =
     getGames(selectedPlatform, selectedCategory, selectedSortBy) || [];
+
+  const isLoading = getGames(selectedPlatform, selectedCategory, selectedSortBy);
 
   return (
     <SafeAreaView>
@@ -31,6 +33,7 @@ function GamesScreen() {
                 return (
                   <View key={game.id}>
                     <GameCard
+                      isLoading={isLoading.isLoading}
                       item={game}
                       title={game.title}
                       thumbnail={game.thumbnail}

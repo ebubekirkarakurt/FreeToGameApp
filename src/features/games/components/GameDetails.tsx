@@ -8,14 +8,14 @@ type Props = {
 }
 
 const GameDetails = ({item}: Props) => {
-  console.log("GAME: ", JSON.stringify(item))
+
   return (
     <Surface style={{height: '100%', backgroundColor:'#f0e1ec'}} elevation={2}>
       <Image source={{uri: item.thumbnail}} style={styles.img}></Image>
       <View style={styles.titleContainer}>
         <Text style={styles.title}>{item.title}</Text>
         <TouchableOpacity style={[styles.titleContainer, styles.btn]}>
-            <Text style={{fontSize:18, padding:2, marginRight:5}} >PlayNow</Text>
+            <Text style={{fontSize:18, padding:2, marginRight:5}} >Play Now</Text>
             <CustomIcon name='play-box' size={20} color='black'/>
         </TouchableOpacity>
       </View>

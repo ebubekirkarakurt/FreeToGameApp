@@ -35,7 +35,6 @@ export const RootNavigator = () => {
         component={GameDetailScreen}
         options={{
           headerShown: true,
-          
         }}
       />
     </RootStack.Navigator>
