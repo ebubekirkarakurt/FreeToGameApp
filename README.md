@@ -5,8 +5,11 @@ This project inspired by [chsdwn.](https://github.com/chsdwn/FreeToGameApp)
 https://github.com/ebubekirkarakurt/FreeToGameApp/assets/114517935/bc0c37d1-3cb5-4ed6-9ee0-50c5fe4ceedc
 
 ## ScreenShots
-List of Games 
-<img src="./assets/homescreen.png" width="300">
+
+<div>
+  <h3>List of Games </h3>
+  <img src="./assets/homescreen.png" width="300">
+</div>
 Loading
 <img src="./assets/skeleton.png" width="300">
 Filter Screen
