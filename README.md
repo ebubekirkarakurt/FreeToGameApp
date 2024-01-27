@@ -1,8 +1,6 @@
 # FreeToGameApp
 This project inspired by [chsdwn.](https://github.com/chsdwn/FreeToGameApp)
 
-## ScreenShots
-
 ## Demo
 https://github.com/ebubekirkarakurt/FreeToGameApp/assets/114517935/bc0c37d1-3cb5-4ed6-9ee0-50c5fe4ceedc
 
