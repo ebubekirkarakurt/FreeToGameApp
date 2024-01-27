@@ -10,12 +10,21 @@ https://github.com/ebubekirkarakurt/FreeToGameApp/assets/114517935/bc0c37d1-3cb5
   <h3>List of Games </h3>
   <img src="./assets/homescreen.png" width="300">
 </div>
-Loading
-<img src="./assets/skeleton.png" width="300">
-Filter Screen
-<img src="./assets/gamefilterscreen.png" width="300">
-Game Details Screen
-<img src="./assets/gamedetailscreen.png" width="300">
+
+<div>
+  <h3>Loading </h3>
+  <img src="./assets/skeleton.png" width="300">
+</div>
+
+<div>
+  <h3>Filter Screen </h3>
+  <img src="./assets/gamefilterscreen.png" width="300">
+</div>
+
+<div>
+  <h3>Game Details Screen  </h3>
+  <img src="./assets/gamedetailscreen.png" width="300">
+</div>
 
 ## Installation
 
