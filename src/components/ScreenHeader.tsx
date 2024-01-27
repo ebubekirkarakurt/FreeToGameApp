@@ -14,6 +14,7 @@ const ScreenHeader = () => {
         <IconButton
           icon="filter-outline"
           size={25}
+          iconColor='#BC0148'
           onPress={() => navigation.navigate('GamesFilterScreen')}
         />
       </View>
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
   },
   headerTxt: {
     fontSize: 20,
-    fontWeight: '500',
+    fontWeight: '600',
     padding: 10,
     textAlign: 'center',
     flex: 1,

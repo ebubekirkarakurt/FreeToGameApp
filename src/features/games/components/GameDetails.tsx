@@ -20,7 +20,7 @@ const GameDetails = ({ item }: Props) => {
           <Text style={{ fontSize: 18, padding: 2, marginRight: 5 }}>
             Play Now
           </Text>
-          <CustomIcon name="play-box" size={20} color="black" />
+          <CustomIcon name="play-box" size={20} color="#BC0148" />
         </TouchableOpacity>
       </View>
       <Text style={styles.description}>{item.short_description}</Text>
