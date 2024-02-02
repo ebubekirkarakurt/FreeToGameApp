@@ -18,6 +18,8 @@ const OptionChip = ({ label, onFilterChange }: Props) => {
           active ? { backgroundColor: '#BC0148' } : null,
         ]}
         mode={active ? 'flat' : 'outlined'}
+        onTouchCancel={true}
+        elevated={false}
         textStyle={[
           active ? { color: 'white' } : null,
           { padding: 2, fontSize: 16 },

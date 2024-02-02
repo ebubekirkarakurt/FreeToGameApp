@@ -15,7 +15,7 @@ const GameDetails = ({ item }: Props) => {
     >
       <Image source={{ uri: item.thumbnail }} style={styles.img}></Image>
       <View style={styles.titleContainer}>
-        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.title} numberOfLines={1} >{item.title}</Text>
         <TouchableOpacity style={[styles.titleContainer, styles.btn]}>
           <Text style={{ fontSize: 18, padding: 2, marginRight: 5 }}>
             Play Now
@@ -51,9 +51,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 30,
+    fontSize: 26,
     fontWeight: '600',
     color: '#BC0148',
+    width: 250
   },
   btn: {
     backgroundColor: 'white',
