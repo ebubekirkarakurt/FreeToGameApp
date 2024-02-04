@@ -42,13 +42,7 @@ Install NPM packages
 Start metro server
  
 ```bash
-<<<<<<< HEAD
-     react-native run-android
+  react-native run-android
   or
-    react-native run-ios
-=======
-  npx react-native run-android
-  or
-  npx react-native run-ios
->>>>>>> f33dad9b340467a44d3ec9c919562bb114b657ef
+  react-native run-ios
 ```
